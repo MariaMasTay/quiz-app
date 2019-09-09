@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Daily To-do List</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Avenir">
+    <link rel="stylesheet" href="/quiz-app/css/quiz-app.css">
+  </head>
+  <body>
+
+<div class="content">
+
+<div id="entry" style="display: block">
+  <h1 id="entry-title">ENVIRONMENTAL QUIZ</h1>
+  <p class="choose">Three questions about the environment.<br>Do you know enough to save our planet?</p>
+  <br>
+  <button id="air">BEGIN!</button>
+</div>
+<img src="/quiz-app/images/entry_image.jpg" id="front_card">
+
+
+
+<div id="quiz_container" style="display: none">
+    <div id="quizContent">
+      <div class="container">
+        <p id="question">Which is the primary greenhouse gas in Earth's atmosphere?</p></br>
+          <div class="questionContainer">
+            <div class="answerButton" id="choiceA" onclick="checkAnswer('A')">Ozone</div>
+            <div class="answerButton" id="choiceB" onclick="checkAnswer('B')">Carbon dioxide</div>
+            <div class="answerButton" id="choiceC" onclick="checkAnswer('C')">Water vapor</div>
+            <div class="answerButton" id="choiceD" onclick="checkAnswer('D')">Methane</div>
+          </div>
+      </div>
+    </div>
+
+    <div id="result" style="display: none">
+      <div class="information">
+        <p class="bold" id="resultQuestion" style="display: none"><b>That is correct!</b></p>
+        <p id="information" style="display: none">Answer</p>
+        <p class="bold" id="nextQuestion">Next >></p>
+      </div>
+
+    </div>
+    <img src="/quiz-app/images/pollution_smoke_environment.jpg" id="pollution" class="information_card" style="display: none">
+    <img src="/quiz-app/images/fishing_threat_ocean.jpg" id="marine" class="information_card" style="display: none">
+    <img src="/quiz-app/images/cattle_environment.jpg" id="deforestation" class="information_card" style="display: none">
+
+</div>
+
+
+<div id="final" style="display: none">
+  <p id="choose">You scored 1 out of 3!</p>
+  <img src="/quiz-app/images/doomed.png" class="end_card" id="doomed" style="display: block">
+  <img src="/quiz-app/images/hope.png" class="end_card" id="hope" style="display: none">
+  <img src="/quiz-app/images/okay.png" class="end_card" id="okay" style="display: none">
+</div>
+
+</div>
+
+  <script src="/quiz-app/quiz-app.js"></script>
+
+  </body>
+</html>
